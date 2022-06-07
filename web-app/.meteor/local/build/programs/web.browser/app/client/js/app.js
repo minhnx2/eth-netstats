@@ -2,7 +2,7 @@
 
 _ = lodash;
 
-socket = new Primus({url: 'ws://localhost:3000'});
+socket = new Primus({url: process.env.ETH_NET_INTELL_WS | 'ws://localhost:3000'});
 
 toastr = window.toastr;
 toastr.options = {
